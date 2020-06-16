@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by anonymous (http://jsbin.com/gamuviceve/11/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+	<title>Angelist</title>
+	<link href="part2.css" rel="stylesheet" type="text/css"/>
+<style id="jsbin-css">
+
+
+.logo img
+{width:30px;
+height: auto;
+float: left;
+margin: 25px;	
+}
+.main ul{
+	list-style-type:none;
+	float:left;
+	margin: 25px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: grey;
+	border-width: 1px;
+	padding:10px 0;
+}
+.main ul li{
+	 display:inline-block;
+	 
+
+}
+.main ul li a{
+	text-decoration:none;
+	color:grey;
+	padding:5px 20px;
+	border: 1px  grey;
+	transition: 0.6s ease;
+	
+	
+
+}
+.main ul li a:hover{
+	background-color:grey;
+	color:#000;
+}
+.main2 ul{
+	list-style-type:none;
+	float:right;
+	margin: 25px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: grey;
+	border-width: 1px;
+	padding:10px 0 ;
+}
+.main2 ul li{
+	 display:inline-block;
+	 papx;
+	 
+
+}
+.main2 ul li a{
+	text-decoration:none;
+	color:grey;
+	padding:5px 20px;
+	border: 1px  grey;
+	transition: 0.6s ease;
+	
+	
+
+}
+.main2 ul li a:hover{
+	background-color:grey;
+	color:#000;
+}
+
+#blue{
+	color:blue;
+	background-color: white;
+}
+#blue:hover{
+	text-decoration:underline;
+	color: darkblue; 
+}
+
+.covid h3{
+
+	color: white;
+	background-color: darkblue;
+	position:absolute;
+	top:20%;
+	left:20%;
+    margin: 30px;
+    margin-left: 100px;
+    padding-right: 100px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.6s ease;
+}
+.covid h3:hover{
+	background-color:#338EFF;
+}
+.second{
+	height:auto;
+	width:100px;
+	position:absolute;
+	top:30%;
+	left:35%;
+    margin: 30px;
+    margin-left: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.join{
+	text-align: center;
+    left:20%;
+    font-family: Founders Grotesk,sans-serif;
+    font-size:54px;
+    font-weight: 700px; 
+}
+.Experience{
+	text-align: center;
+	font-family: Founders Grotesk,sans-serif;
+    left:20%;
+    font-size:30px;
+    font-weight: 300px;
+    padding:88px;
+    padding-top: 5px; 
+}
+.paragraph{
+	font-family: Founders Grotesk,sans-serif;
+}
+.paragraph ul{
+	list-style-type: none;
+    display:flex;
+	justify-content:space-between; 
+	
+
+}
+.paragraph ul li{
+
+
+
+}
+.paralinks{
+	text-decoration:none;
+	color:black;
+	margin-top: 20px;
+	padding:15px 20px;
+	border: 1px  #ff0;
+	transition: 0.6s ease;
+	background-color:orange;
+	font-family: Founders Grotesk,sans-serif;
+}
+.paralinks:hover
+{
+	color:white;
+	background-color: black;
+	transition: 0.6s ease;
+}
+.secondpara{
+	display:flex;
+	justify-content: space-between;
+    font-size: 15px;
+    font-family: Founders Grotesk,sans-serif;
+    font-weight: 500;
+}
+.secondpara pre p 
+{
+	font-size: 20px;
+	font-weight: 900;
+	padding-top: 0px;
+	font-family: Founders Grotesk,sans-serif;
+	
+}
+.secondpara pre h1{
+	font-size: 30px;
+}
+.thirdpara p{
+	font-weight: 700;
+	font-size: 17px;
+    
+}
+.thirdpara {
+  font-family: Founders Grotesk,sans-serif;
+}
+.button {
+	height: 50px;
+	width:150px;
+	background-color: #3398FF ;
+	text-decoration:none;
+	color:white;
+	margin-top: 20px;
+	padding:15px 20px;
+	border: 1px  #ff0;
+	transition: 0.6s ease;
+	font-family: Founders Grotesk,sans-serif;
+}
+.button2
+{
+ text-decoration:none;
+ color:#3398FF;
+ font-family: Founders Grotesk,sans-serif;
+	
+}
+.button2:hover{
+	text-decoration:underline;
+}
+.button:hover{
+	background-color: #334EFF;
+
+}
+.preferred{
+	font-family: Founders Grotesk,sans-serif;
+}
+.preferred ul
+{
+	list-style-type:none;
+	display: flex;
+	justify-content: space-around;
+	font-family: Founders Grotesk,sans-serif;
+
+
+}
+
+.preferred ul li{
+		
+		border-style: solid;
+		border-width: 2px;
+		padding-right:40px;
+		padding-left: 40px; 
+}
+.preferred ul li  pre{
+  		font-family: Founders Grotesk,sans-serif;
+
+}
+.preferred2 ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: space-around;
+	font-family: Founders Grotesk,sans-serif;
+
+}
+.preferred2 ul li{
+		
+		border-style: solid;
+		border-width: 2px;
+		padding-right:40px;
+		padding-left: 40px; 
+		font-family: Founders Grotesk,sans-serif;
+}
+.preferred2 ul li pre{
+  		font-family: Founders Grotesk,sans-serif;
+
+} 
+.preferred ul li a{
+	color:black; 
+}
+.preferred2 ul li a{
+	color:black;
+	 
+}
+.gps{
+	padding-top: 20px;
+	height:200px;
+	width:200px;
+	
+}
+.paragraph ul li pre{
+  font-family: Founders Grotesk,sans-serif;
+}
+.secondpara pre{
+  font-family: Founders Grotesk,sans-serif
+}
+
+.paragraph3{
+	background-color: black;
+	color:white;
+	padding-bottom: 50px; 
+
+}
+.one{
+	font-weight: 900;
+	font-size:130px;
+	text-align: center; 
+}
+.belowone center{
+  font-size:20px;
+  font-weight:900;
+ font-family: Founders Grotesk,sans-serif;
+
+}
+.belowbelowone h3 pre{
+  font-family: Founders Grotesk,sans-serif;
+  font-size:20px;
+
+}
+#post{
+text-decoration:none;
+background-color:#3398FF;  
+padding: 10px 30px;
+color: white;
+  margin-left:20px;
+}
+#post:hover{
+text-decoration:none;
+background-color:#334EFF;  
+padding: 10px 30px;
+color: white;
+}
+.paragra{
+	padding-left: 10px;
+	padding-top: 20px;
+	border-style:none;
+	
+}
+.paragra pre h3{
+ font-family: Founders Grotesk,sans-serif;
+}
+.paragra pre h1{
+ font-family: Founders Grotesk,sans-serif;
+
+}
+#paragra2{
+  font-family: Founders Grotesk,sans-serif;
+
+}
+#paragra3{
+  font-family: Founders Grotesk,sans-serif;
+  
+}
+
+.paragra ul{
+	list-style-type:none;
+	border-style: none;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.paragra ul li{
+	list-style-type:none;
+	border-style: none;
+	 
+}
+.paragra  pre h3{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+
+}
+
+.button3 ul{
+	justify-content: space-around;
+	list-style-type: none;
+	display: flex;
+
+
+}
+.button3 ul li{
+	border-style: none;
+
+}
+.button3 ul li a {
+	text-decoration: none;
+	background-color:#334EFF;
+	padding:10px 25px;
+	color:white;
+	font-weight: 700;
+	margin-left: 14px;
+	justify-content: space-around;
+	transition: 0.6s ease;
+
+}
+.button3 ul li a:hover
+{
+	background-color:darkblue; 
+}
+#none {
+	background-color: white;
+	margin-right: 600px;
+	color: darkblue;
+	font-weight: 400;
+	transition: 0.6s ease;
+
+}
+#none:hover{
+	text-decoration:underline;
+	color: blue;
+
+}
+
+.paragraph5{
+	background-color: black;
+	color: white;
+	margin-top: 144px;
+	margin-bottom: 72px;
+	padding:48px 0;
+}
+.header2
+{
+	text-align: center;
+	font-weight: 700px;
+
+}
+.rocket{
+	height:150px;
+	width: 120px;
+    top:-500px;
+}
+
+.explore{
+background-color:#cc4d29;
+padding:10px 25px;
+text-decoration: none;
+color: white;
+font-weight: 700;
+transition: 0.6s ease;
+}
+.explore:hover
+{
+	background-color: #FF4533 ; 
+
+}
+.imagelinks ul{
+	border-style: none;
+	justify-content: space-between;
+	list-style-type:none;
+	display: flex; 
+
+}
+.uls{
+	background-color: black;
+	color:white;
+	font-size:20px;
+	font-weight: 700;
+	padding: 40px 0px;  
+}
+
+.uls ul{
+	display: inline;
+
+
+}
+
+.uls ul li{
+display: flex;
+justify-content: space-between;
+}
+.uls ul li ul li a{
+	color:white;
+	text-decoration:none; 
+} 
+.uls ul li ul li a:hover{
+	color:white;
+	text-decoration:underline; 
+} 
+.careers{
+  font-family: Founders Grotesk,sans-serif;
+}
+@media (max-width:400px){
+
+ .main ul{
+	background-color:black;
+    margin-left:20px;
+    float:left;
+   
+   
+}
+.main ul li{
+  display:block;
+  margin-bottom:7px;
+  
+	 
+	 
+
+}
+.main ul li a{
+	text-decoration:none;
+	color:grey;
+	padding:5px 20px;
+    border: 1px  grey;
+	transition: 0.6s ease;
+   
+	
+	
+
+}
+.main ul li a:hover{
+	background-color:grey;
+	color:#000;
+}
+  .main2 ul{
+	background-color:black;
+    float:left;
+    margin-left:114px;
+    padding:0px 30px;
+    
+}
+.main2 ul li{
+	 display:block;
+     margin-bottom:7px;
+  }
+.main2 ul li a{
+	text-decoration:none;
+	color:grey;
+	padding:5px 20px;
+	border: 1px  grey;
+	transition: 0.6s ease;
+	
+	
+
+}
+.main2 ul li a:hover{
+	background-color:grey;
+	color:#000;
+}
+  #blue{
+	color:grey;
+	background-color: black;
+}
+#blue:hover{
+	text-decoration:underline;
+	color: darkblue; 
+}
+  .covid{
+
+	color: black;
+    float:right;
+}
+
+  
+
+  
+ 
+}
+
+</style>
+</head>
+<body>
+	<div id="hw">
+<div class="logo">
+ <img src="https://cdn1.iconfinder.com/data/icons/logos-and-brands-3/512/20_Angellist_logo_logos-512.png"> 
+</div>
+<div class="intro">
+<div class="main">
+	 <ul>
+
+	 	<li><a href="#">STARTUP JOBS</a></li>
+        <li><a href="#">RECURIT</a></li>
+	    <li><a href="#">INVEST</a></li>
+		<li><a href="#">BLOG</a></li>
+		<li><a href="#">MORE</a></li>
+		
+
+	 </ul>
+	</div>
+	<div class="main2">
+		<ul>
+		<li><a href="#">Search</a></li>
+    	<li ><a id="blue" href="#">Join</a></li>
+    	<li ><a id="blue" href="#">login</a></li>	<br>
+		</ul>
+	</div></div>
+	<div class="covid">
+    <a href="#"><h3>See How Startup Are Fighting Against COVID-19</h3></a>
+    </div>
+    <img class= "second" src="https://angel.co/cdn-cgi/image/width=1600,height=1200,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto//images/static_pages/homepage/logo-angellist.png">
+
+<div class="part2">
+	<pre>
+<h1 class="join"><strong>
+
+
+
+
+Join the world’s largest startup community</strong><h1></pre>
+<h2 class="Experience">Experience the startup ecosystem — invest in startups, research the fastest-growing companies, and find a job you love.</h2>
+<div class="paragraph">
+<ul>
+<li>	
+<pre>
+<h3>AngelList Talent</h3>
+Apply privately to 130,000+ tech & 
+startup jobs with one application.
+See salary and equity 
+upfront.
+
+    
+ <a href="#"class="paralinks"> Find startup jobs</a>
+</pre>
+</li>
+
+<li>
+<pre>
+<h3>AngelList Venture</h3>
+Over $1 billion deployed alongside 
+leading venture fund managers with
+36% of all top-tier U.S. VC deals 
+funded on AngelList.
+
+   
+ <a href="#" class="paralinks">Apply to be an investor</a>
+</pre>
+</li>
+
+<li>
+<pre>  
+<h3>Product Hunt</h3>
+The next big thing in tech launches everyday. 
+A friendly community of millions of 
+makers & early adopters awaits.
+
+   
+<a href="#" class="paralinks">Explore products</a>
+</pre>
+</li>
+</ul>
+</div>
+<div class="secondpara">
+<pre>	
+AngelList Talent
+<h1>Grow your career</h1>
+<p>Twitch, Stripe, and over 100,000 startups of all
+sizes have used AngelList to hire people like you. 
+Already know where you want to be? You can apply 
+directly—and privately—to early stage startups and 
+industry leaders alike.</p></pre>
+<img class="secondimage" src="https://angel.co/cdn-cgi/image/width=1600,height=1200,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto//images/static_pages/homepage/illustration-talent-2.png" height="auto" width="400px"></div>
+</div>
+<pre class="thirdpara">
+ <p>Talk directly to founders                             See salary & equity upfront</p>
+ Speak directly to founders and                          View salary and stock option details
+ hiring managers.No third party                          before you apply to a job.
+ recruiters allowed .
+
+  
+  <a href="#" class ="button">Find Startup Jobs</a>     <a href="#" class="button2">Post a job</a>
+
+</pre>
+<center><h2>Explore over 2 million tech and startup job-opportunities</h2></center>
+<div class="preferred">
+<ul>
+
+<li><pre>
+<strong>Software Engineer at <a href="#">Twitch</a></strong>
+$130k – $210k </pre>
+</li>
+<li><pre>
+<strong>Software Engineer at <a href="#">Uber</a></strong>
+$100k – $170k</pre>
+</li>
+<li><pre>
+<strong>Product Manager at <a href="#">Roblox</a></strong>
+$115k – $165k</pre>
+</li>
+</ul>
+</div>
+
+<div class="preferred2">
+<ul>
+<li><pre>
+<strong>Senior Product Designer at <a href="#">Instacart</a></strong> 
+$110k – $140k • 0.0% – 0.001% 
+ </pre>
+</li>
+<li><pre>
+<strong>Data Science Manager at <a href="#">Discord</a></strong>
+$180k – $220k • 0.005% – 0.05% 
+</pre>
+</li>
+</ul>
+</div>
+<center><a href="#">Find your dream job</a></center>
+<center><img   class="gps" src="https://angel.co/cdn-cgi/image/width=300,height=268,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto//images/static_pages/homepage/illustration-remote.png"></center>
+<div class="paragraph3">
+<p>
+	<div class="one">100,000<sup>+</sup></div>
+<div class="belowone"><center>of the world's top startups, from seed to post-IPO, build teams on AngelList.</center></div>
+
+
+<div class="belowbelowone">
+<h3><pre>
+   Post jobs, find candidates, and manage your talent
+   pipeline with AngelList's complete hiring toolkit.</pre><h3>
+<pre>
+   <strong>High-quality candidates                                     Free tools to build your team</strong>
+   2,300,000+ candidates including                       Build your employer brand, post
+   750,000+ developers, 170,000+                          jobs, take applications and manage
+   designers, and thousands more every day.     your candidate pipeline - all for free.</pre>
+
+
+
+</p>
+<pre>
+</div>
+
+   <a id="post" href="#">Post jobs for free</a></pre>
+
+</div>
+
+<div class="paragra">
+<pre>
+    <h3>           AngelList Venture</h3>
+<h1>
+      The platform for venture investing</h1></pre>
+<ul>
+<li><p><pre><h2 id="paragra2">
+ Invest alongside top venture investors. Hundreds of
+ angels and VCs rely on AngelList. Whether you’re
+ starting and scaling your own fund, or investing
+ alongside established managers, we’ll help you grow
+ as a top investor.</h2>
+<div id="paragra3">
+<b>                                              <b>
+ $1,000,000,000+</b>                                  36% of top-tier U.S. VC deals</b>
+ flows through AngelList into                  were funded by investors through 
+ thousands of investments.                     AngelList Venture.</div>
+</pre></p></li>
+<li>
+	<img src="https://angel.co/cdn-cgi/image/width=884,height=750,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto//images/static_pages/homepage/illustration-venture-3.png" height="300px" width="auto">
+</li>
+</ul>
+</div>
+<div class="button3">
+	<ul>
+	<li>
+	<a href="#">Apply to be an Investor</a>
+	</li>
+	<li>
+	<a  id="none" href="#">Start a fund or syndicate</a>
+
+	</li>
+	</ul>
+</div> 
+<div class="paragraph5">
+<center><img src="https://angel.co/cdn-cgi/image/width=240,height=300,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto//images/static_pages/homepage/illustration-producthunt-3.png" class="rocket"></center>
+
+<h2 class="header2">Discover the best new products, every day.</h2>
+<center><a class="explore" href="#">Explore Products</a></center>
+
+
+</div>
+
+
+<div class="imagelinks">
+<ul>
+<li>
+<a href="#"><img src="https://angel.co/cdn-cgi/image/width=684,height=456,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto/https://images.ctfassets.net/e8i6c2002cqg/61jk00avP2A7KrzeOlbyBR/ed7ea6438f6e855eb95dd13bd26714b5/Angelist_Illustration_optimized.jpg" height="200" width="auto" alt="Article artwork"></a>
+<pre class="careers">Careers
+
+<h3>30 Questions To Ask Before Joining 
+A Startup</h3>
+You're trying to evaluate the company while still 
+impressing your interviewers, and that 
+balance can be tricky.</pre>
+</li>
+
+<li>
+<a href="#"><img src="https://angel.co/cdn-cgi/image/width=684,height=456,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto/https://images.ctfassets.net/e8i6c2002cqg/1DuM4ynAsLjIk9aRQ2X7nO/23ee855bd75eba9401c920108ecd2bd7/equity_terms_optimized.jpg" height="200" width="auto" alt="Article artwork"></a>
+<pre class="careers">Hiring
+
+<h3>Terms You'll See In Your Startup Equity 
+Offer—And What They Actually Mean</h3>
+No one—with the possible exception of finance 
+experts—looks at their equity package and thinks, 
+“Yep, makes sense."</pre>
+</li>
+
+<li>
+<a href="#"><img src="https://angel.co/cdn-cgi/image/width=684,height=456,fit=scale-down,gravity=0.5x0.5,quality=90,format=auto/https://images.ctfassets.net/e8i6c2002cqg/6LL2NJs05c1lDF1inU59nd/2e2f2b115f8b1b7a324b604fafa653d2/ANGELLIST_ARTICLE3_optimized.jpg" height="200" width="auto" alt="Article artwork"></a>
+<pre class="careers">Hiring
+
+<h3>Why Naval Ravikant Thinks Remote
+Work Is The Future</h3>
+AngelList Founder, Naval Ravikant, says he 
+thinks remote work's time is coming and will be
+the most important category in hiring.</pre>
+</li></ul></div>
+
+<div class="uls">
+<ul>
+<li><ul class="firstul">
+		
+<li><a href="#"><h2>AngelList</h2></a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Startup Jobs</a></li>
+<li><a href="#">Recruiting</a></li>
+<li><a href="#">Investing</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">We're Hiring</a></li>
+<li><a href="#">Product Hunt</a></li>
+<li><a href="#">Help</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Unsubscribe</a></li>
+</ul>
+
+<ul class="secondul">
+
+<li><a href="#"><h2>Job Collections</h2></a></li>
+<li><a href="#">Remote Jobs</a></li>
+<li><a href="#">Part-time Remote Jobs</a></li>
+<li><a href="#">Startup Internships</a></li>
+<li><a href="#">Jobs for Bootcamp Grads</a></li>
+<li><a href="#">Junior Software Engineer Jobs</a></li>
+<li><a href="#">Y Combinator Startup Jobs</a></li>
+<li><a href="#">Female-founded Startup Job</a></li>	
+</ul>
+<ul class="thirdul">
+
+<li><a href="#"><h2>Jobs by Location</h2></a></li>
+<li><a href="#">Jobs in New York City</a></li>
+<li><a href="#">Jobs in San Francisco</a></li>
+<li><a href="#">Jobs in Austin</a></li>
+<li><a href="#">Jobs in Boston</a></li>
+<li><a href="#">Jobs in Washington DC</a></li>
+<li><a href="#">Jobs in Denver</a></li>
+<li><a href="#">Jobs in Seattle</a></li>
+<li><a href="#">Jobs in Chicago</a></li>
+<li><a href="#">Jobs in India</a></li>
+</ul>	
+
+<ul class="fourthul">
+
+<li><a href="#"><h2>Jobs by Role</h2></a></li>
+<li><a href="#">Software Engineer Jobs</a></li>
+<li><a href="#">Product Manager Jobs</a></li>
+<li><a href="#">Data Analyst Jobs</a></li>
+<li><a href="#">Product Designer Jobs</a></li>
+<li><a href="#">Graphic Designer Jobs</a></li>
+<li><a href="#">UI/UX Designer Jobs</a></li>
+<li><a href="#">Operations Manager Jobs</a></li>
+<li><a href="#">Growth Marketer Jobs</a></li>
+<li><a href="#">Account Manager Jobs</a></li>
+<li><a href="#">Sales Manager Jobs</a></li>
+<li><a href="#">Financial Analyst Jobs</a></li>	
+</ul>	
+
+<ul class="fifthul">
+
+
+<li><a href="#"><h2>Our Blog</h2></a></li>
+<li><a href="#">30 Questions To Ask Before Joining A Startup</a></li>
+<li><a href="#">9 Terms You'll See in Your Startup Equity Offer</a></li>
+<li><a href="#">The Truth About Finding Your First Engineering Job</a></li>
+<li><a href="#">How To Hire World-Class Engineers</a></li>
+<li><a href="#">How To Hire Your First 10 Employees</a></li></li>	
+
+</ul>
+</ul>
+</div>
+</div>
+</div>
+		
+
+
+ 
+</body>
+</html>
