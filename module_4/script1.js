@@ -1,11 +1,13 @@
-var string =["jepan", "sahil","ruji","shneha", "andikru","indi","Jepu", "jayir", "Jalsa"];
+//Here is my piece of code. Hope you like it !!
 
+var string =["jepan", "sahil","ruji","shneha", "andikru","indi","Jepu", "jayir", "Jalsa"];//Declaration of code
 
+//a for loop to check whether a name starts with j oa not
 for(i=0; i< string.length ; i++){
-var b= string[i];
-var n =b.startsWith("j");
-var m = b.startsWith("J")
-if ( n==true || m == true ) {
+var b= string[i];//storing string[i] into  a variable
+var n =b.startsWith("j");//checking if the names starts with 'j'
+var m = b.startsWith("J")//checking if the names starts with 'J'
+if ( n==true || m == true ) {//conditional statement to checkk if the above statements are true or not.
 	console.log("Goodbye "+ string[i]);
 
 }
